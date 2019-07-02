@@ -2,10 +2,10 @@
 FROM rocker/verse:3.6.0
 # verse gives all rmarkdown-related stuff including TinyTeX, as well as tidyverse.
 
-MAINTAINER Tom Wallis (twallis@amazon.com)
+MAINTAINER Tom Wallis (tsawallis@gmail.com)
 
 # ENV SHELL /bin/bash
-ENV DEBIAN_FRONTEND=noninteractive
+# ENV DEBIAN_FRONTEND=noninteractive
 
 RUN install2.r --error \
     --deps TRUE \
