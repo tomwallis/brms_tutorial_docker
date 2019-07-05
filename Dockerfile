@@ -7,10 +7,10 @@ MAINTAINER Tom Wallis (tsawallis@gmail.com)
 # ENV SHELL /bin/bash
 # ENV DEBIAN_FRONTEND=noninteractive
 
-##RUN install2.r --error \
-#    --deps TRUE \
-#    devtools
-#
+RUN install2.r --error \
+    --deps TRUE \
+    devtools
+
 #RUN install2.r --error \
 #    --deps TRUE \
 #    ggthemes \
