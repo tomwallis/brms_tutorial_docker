@@ -11,14 +11,14 @@ RUN install2.r --error \
     --deps TRUE \
     devtools
 
-#RUN install2.r --error \
-#    --deps TRUE \
-#    ggthemes \
-#    gridExtra \
-#    here \
-#    psyphy \
-#    tidybayes
-#
+RUN install2.r --error \
+    --deps TRUE \
+    ggthemes \
+    gridExtra \
+    here \
+    psyphy \
+    tidybayes
+
 ## hardwire RStudio theme
 ## RUN echo "uiPrefs={\"theme\" : \"Solarized Dark\"}" >> \
 ##  /home/rstudio/.rstudio/monitored/user-settings/user-settings
