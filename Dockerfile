@@ -16,8 +16,9 @@ RUN install2.r --error \
     ggthemes \
     gridExtra \
     here \
-    psyphy \
-    tidybayes
+    psyphy
+#    tidybayes
+
 
 ## hardwire RStudio theme
 ## RUN echo "uiPrefs={\"theme\" : \"Solarized Dark\"}" >> \
