@@ -26,7 +26,7 @@ RUN install2.r --error \
     ggthemes \
     gridExtra \
     here \
-    psyphy
+    psyphy \
     tidybayes
 
 # hardwire RStudio theme
