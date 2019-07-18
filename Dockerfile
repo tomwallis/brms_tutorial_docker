@@ -27,14 +27,16 @@ RUN install2.r --error \
     gridExtra \
     here \
     psyphy
-    
-#    tidybayes
+
+RUN install2.r --error \
+   --deps TRUE \
+   brms
+
+#RUN install2.r --error \
+#  --deps TRUE \
+#  tidybayes
+
 
 # hardwire RStudio theme
 RUN echo "uiPrefs={\"theme\" : \"Solarized Dark\"}" >> \
  /home/rstudio/.rstudio/monitored/user-settings/user-settings
-
-# install brms (run last in case we want version changes):
-#RUN install2.r --error \
-    #--deps TRUE \
-    #brms
