@@ -14,8 +14,8 @@ RUN apt-get update -qq && apt-get install -yq -qq --no-install-recommends \
     build-essential \
     libgsl-dev \
     libudunits2-dev \
- && apt-get clean \
- && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ && apt-get clean
+ %&& rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN install2.r --error \
     --deps TRUE \
